@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hammer — Cổng thông tin Nghiệp vụ BA/PM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-container">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">Hammer Portal</span>
+          <span class="logo-badge">BA/PM</span>
+        </div>
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="global-search" class="search-input" placeholder="Tìm kiếm nghiệp vụ, model...">
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Tổng quan</div>
+        <ul class="nav-list">
+          <li class="nav-item active" data-target="home">
+            <span class="nav-item-icon">🏠</span>
+            <span class="nav-item-text">Trang chủ</span>
+          </li>
+          <li class="nav-item" data-target="painpoints">
+            <span class="nav-item-icon">👥</span>
+            <span class="nav-item-text">Năng lực & Nỗi đau</span>
+          </li>
+        </ul>
+        
+        <div class="nav-section-title">Quy trình nghiệp vụ</div>
+        <ul class="nav-list">
+          <li class="nav-item" data-target="ddd-flows">
+            <span class="nav-item-icon">🔄</span>
+            <span class="nav-item-text">Dòng chảy Sự kiện (DDD)</span>
+          </li>
+          <li class="nav-item" data-target="rules-faq">
+            <span class="nav-item-icon">🧠</span>
+            <span class="nav-item-text">Luật & FAQ thực chiến</span>
+          </li>
+          <li class="nav-item" data-target="whatsapp">
+            <span class="nav-item-icon">💬</span>
+            <span class="nav-item-text">Hội thoại WhatsApp</span>
+          </li>
+        </ul>
+        
+        <div class="nav-section-title">Kế hoạch tương lai</div>
+        <ul class="nav-list">
+          <li class="nav-item" data-target="ai-ideas-roadmap">
+            <span class="nav-item-icon">💡</span>
+            <span class="nav-item-text">3 Nhóm Ý Tưởng & Roadmap</span>
+          </li>
+          <li class="nav-item" data-target="ai-native-economics">
+            <span class="nav-item-icon">🚀</span>
+            <span class="nav-item-text">AI-Native & Định giá chống lỗ</span>
+          </li>
+          <li class="nav-item" data-target="ai-roadmap">
+            <span class="nav-item-icon">🤖</span>
+            <span class="nav-item-text">Lộ trình AI Agent MVP</span>
+          </li>
+        </ul>
+        
+        <div class="nav-section-title">Từ điển & Quy ước</div>
+        <ul class="nav-list">
+          <li class="nav-item" data-target="glossary">
+            <span class="nav-item-icon">📖</span>
+            <span class="nav-item-text">Từ điển Thuật ngữ</span>
+          </li>
+          <li class="nav-item" data-target="ai-rules">
+            <span class="nav-item-icon">📜</span>
+            <span class="nav-item-text">Quy tắc Vận hành AI</span>
+          </li>
+          <li class="nav-item" data-target="database-erd">
+            <span class="nav-item-icon">🗄️</span>
+            <span class="nav-item-text">Kiến trúc CSDL & ERD</span>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <p>Hammer Project © 2026</p>
+        <p style="margin-top: 4px; opacity: 0.6;">Code-Verified BA Portal</p>
+      </div>
+    </aside>
+    
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+      
+      <!-- SECTION: HOME -->
+      <section id="sec-home" class="content-section active">
+        <h1 class="section-title">Trang chủ Hammer Portal</h1>
+        <p class="section-subtitle">Hệ thống hóa nghiệp vụ thực tế từ mã nguồn backend Rails và kế hoạch nâng cấp AI Agent.</p>
+        
+        <div class="glass-card">
+          <h2 class="card-title">👋 Chào mừng BA/PO/PM đến với Hammer Portal</h2>
+          <p style="line-height: 1.6; color: var(--text-secondary); font-size: 14px; margin-bottom: 16px;">
+            Trang thông tin này được xây dựng riêng để phục vụ đàm phán nghiệp vụ với Khách hàng và giao việc hiệu quả cho Lập trình viên. Toàn bộ các thông số, luật nghiệp vụ, và liên kết code đã được quét và rà soát trực tiếp từ CSDL và file code thực tế của 3 codebase (hammer-api, hammer-web, hammer-mobile).
+          </p>
+          <div class="callout-box">
+            <div class="callout-title">💡 Mẹo sử dụng cổng thông tin</div>
+            <p class="callout-body">
+              Nhấp vào các nhãn liên kết có màu xanh cyan (ví dụ: <a href="file:///c:/Users/Song%20Quyen/Hammer/DEV/hammer-api/app/models/user.rb" class="code-link">user.rb</a>) để mở trực tiếp file code thật trên máy tính của bạn thông qua VS Code.
+            </p>
+          </div>
+        </div>
+        
+        <div class="home-grid">
+          <div class="glass-card home-stat-card">
+            <span class="home-stat-icon">🎓</span>
+            <span class="home-stat-num">3 Loại</span>
+            <span class="home-stat-label">Loại hình lớp học trực tuyến</span>
+            <p class="home-stat-desc">Video Class (VOD), Virtual Class (Học nhóm định kỳ), và Live Stream (Học trực tuyến qua Zoom meeting tự động).</p>
+          </div>
+          
+          <div class="glass-card home-stat-card">
+            <span class="home-stat-icon">💰</span>
+            <span class="home-stat-num">3 Số Dư</span>
+            <span class="home-stat-label">Số dư Ví điện tử của Dancer</span>
+            <p class="home-stat-desc">Locked balance (tiền bảo chứng sự kiện/học ảo), Pending balance (tiền chờ đối soát), và Available balance (tiền rút ngân hàng).</p>
+          </div>
+          
+          <div class="glass-card home-stat-card">
+            <span class="home-stat-icon">⚡</span>
+            <span class="home-stat-num">1-Click</span>
+            <span class="home-stat-label">Thanh toán Guest Checkout Web</span>
+            <p class="home-stat-desc">Tối ưu hóa tỷ lệ chuyển đổi cho khách vãng lai mua vé sự kiện nhanh mà không cần tải hay đăng ký tài khoản app.</p>
+          </div>
+          
+          <div class="glass-card home-stat-card">
+            <span class="home-stat-icon">🤖</span>
+            <span class="home-stat-num">AI Ready</span>
+            <span class="home-stat-label">Kiến trúc AI Agent Microservice</span>
+            <p class="home-stat-desc">Dịch vụ NestJS kết nối CSDL hiện tại, bảo mật bằng giới hạn dữ liệu qua Function Calling đảm bảo an toàn tuyệt đối cho Core DB.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SECTION: PAINPOINTS -->
+      <section id="sec-painpoints" class="content-section">
+        <h1 class="section-title">Bản đồ Năng lực & Nỗi đau (Painpoints)</h1>
+        <p class="section-subtitle">Phương pháp Outside-In: Tập trung giải quyết nỗi đau của từng nhóm tác nhân cụ thể.</p>
+        
+        <div class="actor-tabs" id="actor-tabs-container">
+          <!-- Dynamically Rendered Tabs -->
+        </div>
+        
+        <div class="painpoint-grid" id="painpoints-grid-container">
+          <!-- Dynamically Rendered Cards -->
+        </div>
+
+        <!-- Capability Mindmap & Descriptions -->
+        <div class="glass-card" style="margin-top: 40px;">
+          <h2 class="card-title">📊 Bản đồ Năng lực Nghiệp vụ (Business Capability Map)</h2>
+          <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+            Phân nhóm hệ thống theo các năng lực hoạt động cốt lõi độc lập với công nghệ:
+          </p>
+          <div class="timeline-layout">
+            <div class="diagram-container" id="capability-diagram-container" style="margin: 0; padding: 16px;">
+              <!-- Capability Mindmap Dynamic Img -->
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 16px;" id="capability-list-container">
+              <!-- Capability Explanations -->
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SECTION: DDD FLOWS -->
+      <section id="sec-ddd-flows" class="content-section">
+        <h1 class="section-title">Dòng chảy Sự kiện Nghiệp vụ (DDD Domain Events)</h1>
+        <p class="section-subtitle">Phương pháp Event-First: Mô tả hoạt động của hệ thống theo chuỗi sự kiện nghiệp vụ và model chịu trách nhiệm.</p>
+        
+        <div class="ddd-flow-tabs" id="flow-tabs-container">
+          <!-- Dynamically Rendered Tabs -->
+        </div>
+        
+        <div class="timeline-layout">
+          <!-- Left: Timeline Steps -->
+          <div class="timeline-steps" id="timeline-steps-container">
+            <!-- Dynamically Rendered Steps -->
+          </div>
+          
+          <!-- Right: Event Detail Card -->
+          <div class="timeline-step-detail" id="timeline-detail-container">
+            <!-- Dynamically Rendered Details -->
+          </div>
+        </div>
+        
+        <div class="glass-card" style="margin-top: 32px;">
+          <h3 class="card-title">📊 Sơ đồ luồng chuỗi sự kiện</h3>
+          <div class="diagram-container" id="flow-diagram-container">
+            <!-- Diagram Image -->
+          </div>
+        </div>
+      </section>
+      
+      <!-- SECTION: RULES & FAQ -->
+      <section id="sec-rules-faq" class="content-section">
+        <h1 class="section-title">Luật Nghiệp vụ & FAQ thực chiến</h1>
+        <p class="section-subtitle">Giải đáp các câu hỏi nghiệp vụ khó của dự án dựa trên sự thật từ mã nguồn thực tế.</p>
+        
+        <!-- Core Business Rules Subsection -->
+        <h2 class="card-title" style="margin-bottom: 16px;">📜 Luật Nghiệp vụ Cốt lõi (Core Business Rules)</h2>
+        <div class="painpoint-grid" id="core-rules-container" style="margin-bottom: 40px;">
+          <!-- Dynamically Rendered Core Rules Cards -->
+        </div>
+
+        <h2 class="card-title" style="margin-bottom: 16px;">❓ Câu hỏi nghiệp vụ thực chiến (Question-Driven FAQ)</h2>
+        <div class="faq-list" id="faq-list-container">
+          <!-- Dynamically Rendered FAQs -->
+        </div>
+      </section>
+      
+      <!-- SECTION: 3 NHÓM Ý TƯỞNG & ROADMAP PHÁT TRIỂN AI-NATIVE -->
+      <section id="sec-ai-ideas-roadmap" class="content-section">
+        <h1 class="section-title">💡 Nhu Cầu Thực Tế Của Dancer & Kế Hoạch Làm Sản Phẩm</h1>
+        <p class="section-subtitle">Bản tổng hợp các khó khăn thực tế của vũ công hàng ngày, các ý tưởng giải pháp thực tế từ Bác Hammer & Team, thứ tự làm theo từng giai đoạn và cách triển khai tiết kiệm chi phí.</p>
+        
+        <!-- HERO SUMMARY CARD: TẦM NHÌN & Ý TƯỞNG CỐT LÕI CỦA BÁC HAMMER -->
+        <div class="glass-card" style="border-left: 4px solid var(--accent-purple); background: linear-gradient(135deg, #ffffff 0%, #faf5ff 100%); margin-bottom: 24px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 280px;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span style="font-size: 20px;">👑</span>
+                <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--accent-purple); letter-spacing: 1px;">TỔNG KẾT TẦM NHÌN CỐT LÕI TỪ BÁC HAMMER (FOUNDER VISION)</span>
+              </div>
+              <h2 style="font-size: 18px; font-weight: 800; color: var(--text-primary); margin-top: 2px;">
+                Hammer 2.0: Không chỉ là App gắn AI, mà là Nền tảng AI-Native sinh ra vì Dancer
+              </h2>
+              <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 8px;">
+                <em>"Mục tiêu của tôi không phải biến Hammer thành một app thông thường dành cho vũ công rồi gắn thêm AI, mà biến Hammer thành một <strong>nền tảng hoàn toàn mới được thiết kế xoay quanh AI ngay từ đầu</strong>. AI không bao giờ thay thế được nghệ thuật nhảy của con người, nhưng AI sẽ gánh vác toàn bộ các công việc lặt vặt, phụ trợ để vũ công toàn tâm toàn ý sống với đam mê và nâng cao thu nhập."</em>
+              </p>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; margin-top: 14px;">
+                <div style="background: #ffffff; padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(109, 40, 217, 0.15);">
+                  <div style="font-size: 12px; font-weight: 700; color: var(--accent-cyan); margin-bottom: 2px;">🎯 1. Brute-Force (Săn việc số lượng lớn)</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.4;">Bot tự động cào tin tuyển dụng khắp Châu Á, giúp vũ công có show diễn và kiếm tiền ngay lập tức.</div>
+                </div>
+                <div style="background: #ffffff; padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(109, 40, 217, 0.15);">
+                  <div style="font-size: 12px; font-weight: 700; color: var(--color-success); margin-bottom: 2px;">🤖 2. Bespoke (Trợ lý cá nhân may đo)</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.4;">Như một 'Quản lý riêng' lo lịch tập, thu chi, nhắc nợ và dịch thuật ngữ khi dạy online toàn cầu.</div>
+                </div>
+                <div style="background: #ffffff; padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(109, 40, 217, 0.15);">
+                  <div style="font-size: 12px; font-weight: 700; color: var(--accent-pink); margin-bottom: 2px;">🎵 3. Disposable (Dùng 1 lần rồi bỏ)</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.4;">Công cụ cắt ghép nhạc showcase 2 phút, xếp sơ đồ đội hình tức thì không cần tốn tiền thuê ngoài.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TỔNG QUAN VÒNG ĐỜI VÀ NỖI ĐAU (GLOBAL PROBLEM STATEMENT) -->
+        <div class="glass-card" style="border-left: 4px solid #ef4444; background: linear-gradient(135deg, #ffffff 0%, #fef2f2 100%); margin-bottom: 24px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #dc2626; letter-spacing: 1px;">THỰC TẾ CUỘC SỐNG CỦA DANCER</span>
+            <a href="https://www.adobe.com/express/learn/blog/vision-future-creativity" target="_blank" rel="noopener noreferrer" style="font-size: 11.5px; color: #b91c1c; font-weight: 700; text-decoration: underline; display: inline-flex; align-items: center; gap: 4px;">
+              📊 Nguồn: Adobe Future of Creativity Study ↗
+            </a>
+          </div>
+          <h2 style="font-size: 18px; font-weight: 800; color: var(--text-primary); margin-top: 4px;">4 Khó Khăn Lớn Nhất Của Một Vũ Công Tự Do Hàng Ngày</h2>
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 6px;">
+            Theo nghiên cứu toàn cầu của <a href="https://www.adobe.com/express/learn/blog/vision-future-creativity" target="_blank" rel="noopener noreferrer" style="color: #dc2626; font-weight: 700; text-decoration: underline;">Adobe - The Future of Creativity</a> và thực tế từ Bác Hammer: Các nghệ sĩ tự do (Freelance Dancers) phải <strong>dành hơn 70 - 80% thời gian và năng lượng cho các việc bàn giấy, kỹ thuật phụ trợ và lo âu tài chính</strong> thay vì được tập trung trọn vẹn vào việc nhảy và sáng tạo:
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 12px;">
+            <div style="background: #ffffff; padding: 12px; border-radius: 10px; border: 1px solid #fecaca;">
+              <div style="font-size: 13px; font-weight: 700; color: #dc2626; margin-bottom: 3px;">1. Bão Hòa Việc Bàn Giấy</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.5;">Mất hàng giờ săn job casting, viết thư chào hàng, tự canh lịch diễn và tự đi đòi nợ cát-xê.</div>
+            </div>
+            <div style="background: #ffffff; padding: 12px; border-radius: 10px; border: 1px solid #fecaca;">
+              <div style="font-size: 13px; font-weight: 700; color: #dc2626; margin-bottom: 3px;">2. Chi Phí Sáng Tạo Tức Thì Đắt Đỏ</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.5;">Cần 1 bài nhạc showcase 2 phút tốn $50-100 thuê DJ; dựng video TikTok mất nửa ngày chỉnh góc quay.</div>
+            </div>
+            <div style="background: #ffffff; padding: 12px; border-radius: 10px; border: 1px solid #fecaca;">
+              <div style="font-size: 13px; font-weight: 700; color: #dc2626; margin-bottom: 3px;">3. Mất Cắp Bản Quyền Điệu Nhảy</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.5;">Vũ đạo viral bị nhãn hàng lớn lấy làm TVC miễn phí mà không được trả tiền tác quyền.</div>
+            </div>
+            <div style="background: #ffffff; padding: 12px; border-radius: 10px; border: 1px solid #fecaca;">
+              <div style="font-size: 13px; font-weight: 700; color: #dc2626; margin-bottom: 3px;">4. Rào Cản Ngoại Ngữ Quốc Tế</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.5;">Giáo viên Nhật/Hàn ngại nói tiếng Anh, đánh mất cơ hội bán lớp online cho học viên toàn cầu.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- PHASE 1: BRUTE-FORCE JOB DISCOVERY & OUTREACH (CURRENT MVP) -->
+        <!-- ========================================================================= -->
+        <div class="glass-card" style="border-top: 4px solid var(--accent-cyan); margin-bottom: 28px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span style="font-size: 11px; font-weight: 800; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px;">GIAI ĐOẠN 1 • TRIỂN KHAI NGAY</span>
+              <h2 style="font-size: 18px; font-weight: 800; color: var(--text-primary); margin-top: 2px;">🎯 Phase 1 MVP: Brute-Force Job Discovery & Săn Việc Tự Động</h2>
+            </div>
+            <span class="logo-badge" style="background: #e0f2fe; color: #0284c7; font-weight: 700; border: 1px solid #bae6fd; font-size: 12px;">Baseline: 215 MDs • 10 Màn Hình</span>
+          </div>
+
+          <!-- WHY - WHAT - HOW CỦA PHASE 1 -->
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <!-- WHY -->
+            <div style="background: #f0fdf4; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--color-success);">
+              <div style="font-size: 12.5px; font-weight: 800; color: #166534; margin-bottom: 2px;">📌 WHY (Tại sao phải làm trước?):</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.6;">
+                Thu nhập và cơ hội biểu diễn là <strong>nỗi đau sinh tồn số 1</strong> của Dancer. Giúp vũ công tìm được việc và nhận cát-xê ngay lập tức sẽ tạo ra giá trị thiết thực nhất, từ đó kích hoạt mạng lưới người dùng ban đầu.
+              </div>
+            </div>
+
+            <!-- WHAT -->
+            <div style="background: #f8fafc; padding: 14px; border-radius: 10px; border: 1px solid var(--border-color);">
+              <div style="font-size: 13px; font-weight: 800; color: var(--text-primary); margin-bottom: 10px;">📦 WHAT (Tập hợp các tính năng triển khai - <i>💡 Di chuột vào từng ô để xem chi tiết</i>):</div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
+                
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-cyan);">🕷️ 1. Multi-Source Pan-Asian Job Scraper</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Cào tự động 24/7 từ hàng trăm studio, website casting & MXH trên toàn Châu Á.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #0284c7; color: #ffffff;">Phase 1 • Săn việc tự động</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #38bdf8;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Thay vì vũ công phải tự thức đêm lướt Facebook/Instagram/Web studio ở Nhật, Sing, Hàn... Bot tự gom tất cả tin tuyển vũ công biểu diễn, quay MV, dạy nhảy về 1 bảng tin duy nhất theo thời gian thực.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-cyan);">🎯 2. Deterministic % Match Ranking</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Lọc cứng 18+, thể loại & thành phố &rarr; Đẩy điểm % Match ngay trên Job Feed.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #0284c7; color: #ffffff;">Phase 1 • Bộ lọc chuẩn xác</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #38bdf8;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Tránh tình trạng vũ công Hip-hop lại bị gợi ý show nhảy Ballet, hoặc chưa đủ 18 tuổi lại thấy show diễn bar. Hệ thống so khớp độ tuổi, thể loại nhảy và thành phố để chấm điểm % độ hợp của job.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-cyan);">✉️ 3. AI Pitch & Outreach Generator</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Phân tích profile để tạo thư chào hàng chuyên nghiệp chuẩn song ngữ Anh/Nhật.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #0284c7; color: #ffffff;">Phase 1 • Thư chào hàng AI</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #38bdf8;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Vũ công thường ngại viết email lịch sự bằng tiếng Nhật hoặc tiếng Anh. AI sẽ đọc yêu cầu của đạo diễn, tự lấy video nhảy đẹp nhất trong hồ sơ của bạn để viết 1 bức thư xin show chuẩn chỉ trong 3 giây.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-cyan);">📋 4. Application Status Tracker</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Lưu job yêu thích & theo dõi trạng thái nộp hồ sơ (Đã gửi thư / Đậu casting).</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #0284c7; color: #ffffff;">Phase 1 • Quản lý hồ sơ</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #38bdf8;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Một bảng Kanban cá nhân giúp bạn không bị quên xem mình đã nộp đơn cho show nào, bên nào đã phản hồi và show nào đã đậu để sắp xếp lịch chuẩn bị đi diễn.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- HOW -->
+            <div style="background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
+              <div style="font-size: 12.5px; font-weight: 800; color: var(--accent-cyan); margin-bottom: 2px;">🛠️ HOW (Kiến trúc kỹ thuật & Vận hành):</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.6;">
+                • <strong>Hạ tầng:</strong> Chạy 100% trên <strong>Rails Server hiện tại (`hammer-api`)</strong> qua Service Objects độc lập &rarr; <strong>Chi phí Server = $0/tháng</strong>.<br>
+                • <strong>AI Engine:</strong> Dùng <strong>Gemini 1.5 Flash API</strong> + Bộ lọc Rule-based &rarr; Chi phí cực rẻ (&lt;$0.10/user/tháng, tổng vận hành &lt;$100/tháng).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- PHASE 2: BESPOKE ASSISTANT & GLOBAL ECOSYSTEM (EXPANSION) -->
+        <!-- ========================================================================= -->
+        <div class="glass-card" style="border-top: 4px solid var(--color-success); margin-bottom: 28px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span style="font-size: 11px; font-weight: 800; color: var(--color-success); text-transform: uppercase; letter-spacing: 1px;">GIAI ĐOẠN 2 • MỞ RỘNG & THU HÚT TOÀN CẦU</span>
+              <h2 style="font-size: 18px; font-weight: 800; color: var(--text-primary); margin-top: 2px;">🤖 Phase 2: Bespoke Personal Assistant & Nền Kinh Tế Vũ Đạo</h2>
+            </div>
+            <span class="logo-badge" style="background: #ecfdf5; color: #059669; font-weight: 700; border: 1px solid #a7f3d0; font-size: 12px;">Mô Hình Gói Thuê Bao $9.99/Tháng</span>
+          </div>
+
+          <!-- WHY - WHAT - HOW CỦA PHASE 2 -->
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <!-- WHY -->
+            <div style="background: #f0fdf4; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--color-success);">
+              <div style="font-size: 12.5px; font-weight: 800; color: #166534; margin-bottom: 2px;">📌 WHY (Tại sao cần triển khai tiếp theo?):</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.6;">
+                Sau khi có việc, vũ công cần một "Quản lý riêng" để giữ nhịp sinh hoạt hàng ngày, thu hồi tiền cát-xê đúng hạn và mở rộng giảng dạy ra quốc tế mà không bị rào cản tiếng Anh cản trở.
+              </div>
+            </div>
+
+            <!-- WHAT -->
+            <div style="background: #f8fafc; padding: 14px; border-radius: 10px; border: 1px solid var(--border-color);">
+              <div style="font-size: 13px; font-weight: 800; color: var(--text-primary); margin-bottom: 10px;">📦 WHAT (Tập hợp các tính năng triển khai - <i>💡 Di chuột vào từng ô để xem chi tiết</i>):</div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
+                
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--color-success);">📅 1. Calendar & Rehearsal Dispatcher</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Đồng bộ lịch tập/show, cảnh báo trùng lịch và tính thời gian di chuyển.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #059669; color: #ffffff;">Phase 2 • Trợ lý lịch trình</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #6ee7b7;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Vũ công hay nhận nhiều show/lớp dạy cùng lúc nên dễ bị chồng lịch. AI tự đồng bộ Google Calendar, cảnh báo nếu 2 phòng tập cách nhau quá xa không kịp chạy xe.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--color-success);">💰 2. Freelance Financial Tracker</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Quản lý thu chi cát-xê, tự động soạn tin nhắn lịch sự nhắc trả nợ.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #059669; color: #ffffff;">Phase 2 • Sổ tay thu chi</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #6ee7b7;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Nghệ sĩ thường ngại mở lời đòi nợ ban tổ chức. AI tự ghi nhận show nào chưa thanh toán, tự soạn sẵn tin nhắn nhắc nợ cực kỳ khéo léo và lịch sự để bạn chỉ cần bấm gửi.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--color-success);">📇 3. Organizer CRM & Context Memory</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Ghi nhớ gu âm nhạc, độ sòng phẳng và lịch sử chat của từng ban tổ chức.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #059669; color: #ffffff;">Phase 2 • Bộ nhớ khách hàng</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #6ee7b7;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Lưu lại ghi chú về từng bên mời show: Bên này trả tiền nhanh hay chậm, thích phong cách nhảy nào, để lần sau làm việc bạn luôn ở thế chủ động và chuyên nghiệp.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--color-success);">🌐 4. AI Auto-Dubbing & Dance Subtitles</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Lồng tiếng Voice Clone & dịch thuật ngữ vũ đạo realtime cho lớp online.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #059669; color: #ffffff;">Phase 2 • Dịch thuật ngữ nhảy</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #6ee7b7;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Thầy giáo Nhật chỉ cần nói tiếng Nhật khi dạy trên Zoom/video, AI sẽ dịch phụ đề hoặc lồng tiếng Anh chuẩn thuật ngữ đường phố (Popping, Locking) cho học viên quốc tế hiểu ngay.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--color-success);">🤝 5. Event Connection Scout</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Tự động tìm kiếm & gợi ý kết nối các dancer cùng gu tham gia event.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #059669; color: #ffffff;">Phase 2 • Ghép đội & Kết nối</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #6ee7b7;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Đi thi đấu battle 2vs2 hoặc lập nhóm diễn show mà thiếu người cùng thể loại, AI sẽ gợi ý các dancer có cùng gu âm nhạc và trình độ đang rảnh lịch để rủ ghép đội.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--color-success);">💵 6. Smart Rate-Card & Quotation</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Gợi ý mức cát-xê tối ưu theo thâm niên & xuất bản báo giá chuẩn.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #059669; color: #ffffff;">Phase 2 • Định giá cát-xê</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #6ee7b7;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Vũ công trẻ thường bị ép giá vì không biết ra giá bao nhiêu. AI dựa vào kinh nghiệm, thể loại và quy mô sự kiện để đề xuất mức cát-xê hợp lý, không lo bị "hớ".
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--color-success);">💎 7. AI Brand Sponsorship Matchmaker</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Ghép nối dancer với nhãn hàng thể thao + Tự tạo Media Kit động.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #059669; color: #ffffff;">Phase 2 • Kiếm show nhãn hàng</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #6ee7b7;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Tự động tạo 1 trang Portfolio/Media Kit chuyên nghiệp để gửi cho các nhãn hàng như Nike, Monster Energy khi họ cần tìm gương mặt đại diện hoặc vũ công quay TVC.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--color-success);">🧘 8. Injury Prevention & Recovery Coach</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Phân tích tải trọng diễn để nhắc lịch giãn cơ và nghỉ ngơi tránh chấn thương.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #059669; color: #ffffff;">Phase 2 • Bảo vệ sức khỏe</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #6ee7b7;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Nhảy liên tục 6-8 tiếng rất dễ thoái hóa khớp gối/cổ chân. AI theo dõi cường độ tập trong tuần để đưa ra bài tập giãn cơ và cảnh báo bạn cần nghỉ ngơi.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--color-success);">📘 9. AI Soft-Skills Guidebook & Translator</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Cẩm nang số: Gọi tên kỹ năng mềm từ múa & chuyển sang CV nghề khác.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #059669; color: #ffffff;">Phase 2 • Hướng nghiệp mở rộng</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #6ee7b7;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Giúp vũ công khi lớn tuổi hoặc muốn chuyển ngành: AI sẽ 'dịch' kỹ năng làm việc nhóm, thích ứng sân khấu thành năng lực quản lý dự án, tổ chức sự kiện chuyên nghiệp trong CV.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- HOW -->
+            <div style="background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--color-success);">
+              <div style="font-size: 12.5px; font-weight: 800; color: var(--color-success); margin-bottom: 2px;">🛠️ HOW (Kiến trúc kỹ thuật & Kinh tế):</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.6;">
+                • <strong>Kỹ thuật:</strong> Dùng <strong>RAG + Dance Glossary DB</strong> (Bộ từ điển thuật ngữ nhảy riêng của Hammer) nạp vào Gemini Flash, kết hợp Zoom Apps API.<br>
+                • <strong>Mô hình kinh doanh:</strong> Thu phí gói <strong>Dancer Pro $9.99/tháng</strong> (IAP App Store / Google Play). Chi phí AI thực tế ~$0.65/user &rarr; <strong>Biên lợi nhuận ròng đạt 93.5%</strong>.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========================================================================= -->
+        <!-- PHASE 3: DISPOSABLE CREATIVE GEN & DEEP-TECH IP (FUTURE) -->
+        <!-- ========================================================================= -->
+        <div class="glass-card" style="border-top: 4px solid var(--accent-pink); margin-bottom: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span style="font-size: 11px; font-weight: 800; color: var(--accent-pink); text-transform: uppercase; letter-spacing: 1px;">GIAI ĐOẠN 3 • ĐỘT PHÁ SÁNG TẠO & BẢN QUYỀN</span>
+              <h2 style="font-size: 18px; font-weight: 800; color: var(--text-primary); margin-top: 2px;">🎵 Phase 3: Disposable Creative Tools, Motion AI & Dance IP</h2>
+            </div>
+            <span class="logo-badge" style="background: #fdf2f8; color: #db2777; font-weight: 700; border: 1px solid #fbcfe8; font-size: 12px;">Mô Hình Nạp Token (Pay-Per-Use)</span>
+          </div>
+
+          <!-- WHY - WHAT - HOW CỦA PHASE 3 -->
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <!-- WHY -->
+            <div style="background: #f0fdf4; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--color-success);">
+              <div style="font-size: 12.5px; font-weight: 800; color: #166534; margin-bottom: 2px;">📌 WHY (Tại sao đưa vào Phase 3?):</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.6;">
+                Xử lý âm thanh, video đa phương tiện, thị giác máy tính và bản quyền cần hạ tầng GPU nặng. Khi đã có cộng đồng đông đảo từ Phase 1 & 2, việc tung ra các tiện ích sáng tạo sẽ tạo ra bước nhảy vọt thương hiệu độc quyền toàn cầu.
+              </div>
+            </div>
+
+            <!-- WHAT -->
+            <div style="background: #f8fafc; padding: 14px; border-radius: 10px; border: 1px solid var(--border-color);">
+              <div style="font-size: 13px; font-weight: 800; color: var(--text-primary); margin-bottom: 10px;">📦 WHAT (Tập hợp các tính năng triển khai - <i>💡 Di chuột vào từng ô để xem chi tiết</i>):</div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
+                
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-pink);">🎧 1. Instant Showcase Music Remix</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Tự mix bài nhạc 2 phút 120 BPM tức thì cho audition thay vì thuê DJ $100.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #db2777; color: #ffffff;">Phase 3 • Cắt ghép nhạc tức thì</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #f472b6;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Cần nhạc đi diễn gấp chỉ cần tải bài hát lên và gõ: 'Cắt đoạn điệp khúc 2 phút, tăng lên 128 BPM để nhảy sôi động'. AI tự mix và nối beat mượt mà trong 10 giây, tiết kiệm cả triệu thuê DJ.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-pink);">👥 2. Formation & Stage Canvas</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Kéo thả sơ đồ vị trí đội hình 5-10 người trên sân khấu 10x8m.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #db2777; color: #ffffff;">Phase 3 • Xếp đội hình</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #f472b6;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Biên đạo nhóm nhảy không cần vẽ tay lên giấy nguệch ngoạc. Một bảng kéo thả avatar các vũ công trên sân khấu 2D/3D giúp cả đội nhìn vào là biết đoạn nào mình đứng ở đâu ngay.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-pink);">🎬 3. Multi-Format Video Clipper</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Tự động cắt 2 bản video (dọc 9:16 TikTok, ngang Facebook) bắt trọn góc nhảy.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #db2777; color: #ffffff;">Phase 3 • Dựng video tự động</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #f472b6;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Quay cả bài nhảy góc rộng, AI tự lia camera bám theo vũ công chính giữa khung hình và xuất ra 1 clip dọc cho TikTok/Reels và 1 clip ngang cho Facebook/YouTube mà không bị mất nét.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-pink);">🕺 4. AI Pose & Musicality Scorer</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Camera soi khung xương, chấm điểm form dáng & độ lệch nhịp.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #db2777; color: #ffffff;">Phase 3 • Thầy giáo ảo sửa dáng</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #f472b6;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Khi học viên tự tập ở nhà, bật camera lên: AI sẽ so khớp góc nghiêng tay chân với clip mẫu của giáo viên và báo ngay: 'Bạn đang bị chậm nửa nhịp' hoặc 'Tay giơ chưa đủ cao'.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-pink);">🛡️ 5. 'Shazam for Dance Moves'</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Tạo vân tay chuyển động truy vết bản quyền & thu phí tác quyền.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #db2777; color: #ffffff;">Phase 3 • Bản quyền vũ đạo</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #f472b6;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Biên đạo sáng tạo 1 điệu nhảy hot trên TikTok, AI quét mạng xã hội tìm xem clip TVC/quảng cáo nào dùng lại chuỗi động tác đó để hỗ trợ đòi tiền tác quyền cấp phép.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-pink);">🏆 6. AI Battle Co-Judge</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Đo lỗi lặp động tác, thời gian chiếm sàn và đo tiếng hò reo khán giả.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #db2777; color: #ffffff;">Phase 3 • Trọng tài giải đấu</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #f472b6;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Khi thi đấu nhảy đối kháng (Battle): AI hỗ trợ ban giám khảo đo chính xác thời gian mỗi bên nhảy, phát hiện nếu đối thủ lặp lại động tác cũ và đo decibel tiếng vỗ tay của khán giả.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-pink);">🛍️ 7. Hammer Mini-App Marketplace</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Chợ ứng dụng mini tổng hợp các tool âm thanh, sân khấu ảo.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #db2777; color: #ffffff;">Phase 3 • Chợ tiện ích mở</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #f472b6;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Nơi các lập trình viên hoặc studio có thể đưa các tiện ích nhỏ (như đếm nhịp BPM, đèn laser sân khấu ảo) lên để cộng đồng dancer dùng theo dạng trả tiền theo lượt.
+                  </div>
+                </div>
+
+                <div class="feature-interactive-card">
+                  <div style="font-size: 12.5px; font-weight: 700; color: var(--accent-pink);">🤖 8. Text-to-3D Motion Gen</div>
+                  <div style="font-size: 11.5px; color: var(--text-secondary); line-height: 1.5; margin-top: 2px;">Gõ prompt sinh mẫu chuyển động 3D avatar cho biên đạo bí ý tưởng.</div>
+                  <div class="hover-tooltip">
+                    <span class="tooltip-badge" style="background: #db2777; color: #ffffff;">Phase 3 • Gợi ý động tác 3D</span>
+                    <div style="font-weight: 700; margin-bottom: 4px; color: #f472b6;">🎯 Giải quyết việc gì cho người mới?</div>
+                    Khi biên đạo bị 'bí' động tác chuyển đoạn, chỉ cần gõ: 'Chuyển từ Pop nhịp nhanh sang trượt sàn mượt mà' &rarr; AI sinh ra 1 hình nhân 3D thực hiện động tác mẫu để lấy cảm hứng.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- HOW -->
+            <div style="background: #f8fafc; padding: 12px 16px; border-radius: 8px; border-left: 3px solid var(--accent-pink);">
+              <div style="font-size: 12.5px; font-weight: 800; color: var(--accent-pink); margin-bottom: 2px;">🛠️ HOW (Kiến trúc kỹ thuật & Kiểm soát chi phí):</div>
+              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.6;">
+                • <strong>Kỹ thuật:</strong> Tách thành <strong>Microservice vệ tinh AI (Node.js/Python)</strong> cắm các API chuyên dụng (MusicGen, MediaPipe, FFmpeg).<br>
+                • <strong>Nguyên tắc chống lỗ tuyệt đối:</strong> Các tính năng này tốn chi phí GPU cao (~$5.00/lần gen), <strong>BẮT BUỘC KHÔNG BÁN UNLIMITED</strong> mà bán theo <strong>Gói Token Nạp Tiền (Pay-per-use)</strong> để người dùng tự trả tiền chi phí AI.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- SECTION: AI-NATIVE ROADMAP & ECONOMICS (LIGHT THEME OPTIMIZED) -->
+      <section id="sec-ai-native-economics" class="content-section">
+        <h1 class="section-title">🚀 Tầm Nhìn AI-Native & Mô Hình Định Giá Chống Lỗ</h1>
+        <p class="section-subtitle">Phân tích chuyên sâu 2 trụ cột mới (Disposable AI & Bespoke AI Assistant) song song với Phase 1 Job Agent, mô hình gói thuê bao và kịch bản tài chính khi scale-up từ 50 đến 200 users.</p>
+        
+        <!-- HERO CARD: TẦM NHÌN BÁC HAMMER -->
+        <div class="glass-card" style="border-left: 4px solid var(--accent-purple); background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 100%);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+            <div>
+              <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--accent-purple); letter-spacing: 1px;">HAMMER 2.0 TRANSFORMATION</span>
+              <h2 style="font-size: 20px; font-weight: 800; color: var(--text-primary); margin-top: 4px;">Định Vị: Nền Tảng AI-Native Cho Vũ Công (AI-First Platform)</h2>
+              <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 8px; max-width: 900px;">
+                Không đơn thuần là gắn AI vào một app có sẵn, Bác Hammer muốn định hình lại toàn bộ nền tảng với 3 trụ cột công nghệ: 
+                <strong>1. Disposable Software</strong> (Dùng 1 lần rồi bỏ như Remix nhạc/Xếp đội hình), 
+                <strong>2. Bespoke Software</strong> (Trợ lý cá nhân hóa quản lý lịch/thu chi/CRM), và 
+                <strong>3. Brute-Force Software</strong> (Săn việc quy mô lớn - Phase 1 MVP).
+              </p>
+            </div>
+            <div style="background: #ffffff; border: 1px solid var(--border-color); padding: 12px 18px; border-radius: 12px; text-align: right; box-shadow: 0 2px 4px rgba(0,0,0,0.03);">
+              <span style="font-size: 11px; font-weight: 700; color: var(--text-muted); display: block;">QUY MÔ BASELINE</span>
+              <span style="font-size: 20px; font-weight: 800; color: var(--accent-purple);">50 &rarr; 200 Users</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 TRỤ CỘT SO SÁNH CHI TIẾT -->
+        <h2 class="card-title" style="margin-top: 28px; margin-bottom: 16px;">🏛️ 3 Trụ Cột Tầm Nhìn AI-Native (Vision Roadmap)</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; margin-bottom: 30px;">
+          
+          <!-- Trụ Cột 1: Disposable AI -->
+          <div class="glass-card" style="margin: 0; border-top: 4px solid var(--accent-purple);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+              <span style="font-size: 12px; font-weight: 800; color: var(--accent-purple);">1. DISPOSABLE AI (DÙNG 1 LẦN)</span>
+              <span class="logo-badge" style="font-size: 10px; padding: 2px 8px; border-radius: 20px; background: #f3e8ff; color: #7e22ce;">Phase 3 / Pay-per-use</span>
+            </div>
+            <h3 style="font-size: 15px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Remix Nhạc Show & Sơ Đồ Đội Hình</h3>
+            <p style="font-size: 12px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;">
+              Công cụ tức thì: Cắt ghép/Remix nhạc showcase thay vì thuê DJ ($50-100/track) + Xếp sơ đồ đội hình nhảy trên sân khấu.
+            </p>
+            <div style="background: #f8fafc; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 11px; line-height: 1.7; color: var(--text-secondary);">
+              <div><strong style="color: var(--text-primary);">Tech Stack:</strong> MusicGen / Suno API + Canvas UI</div>
+              <div><strong style="color: var(--text-primary);">Chi phí API:</strong> <span style="color: var(--color-danger); font-weight: 700;">Rất cao ($0.15 - $0.40/lượt gen)</span></div>
+              <div><strong style="color: var(--text-primary);">Cơ chế:</strong> Bắt buộc dùng <em>Token / Credit Nạp Tiền</em> (Không bao cấp miễn phí).</div>
+            </div>
+          </div>
+
+          <!-- Trụ Cột 2: Bespoke AI -->
+          <div class="glass-card" style="margin: 0; border-top: 4px solid var(--color-success);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+              <span style="font-size: 12px; font-weight: 800; color: var(--color-success);">2. BESPOKE AI (TRỢ LÝ RIÊNG)</span>
+              <span class="logo-badge" style="font-size: 10px; padding: 2px 8px; border-radius: 20px; background: #dcfce7; color: #15803d;">Phase 2 / Subscription</span>
+            </div>
+            <h3 style="font-size: 15px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Personal Manager: Lịch Trình, Thu Chi & CRM</h3>
+            <p style="font-size: 12px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;">
+              Trợ lý ảo riêng: Tự ghi nhớ lịch tập/show, quản lý tiền cát-xê nợ/đã trả, hồ sơ Organizer & lịch sử chat trao đổi.
+            </p>
+            <div style="background: #f8fafc; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 11px; line-height: 1.7; color: var(--text-secondary);">
+              <div><strong style="color: var(--text-primary);">Tech Stack:</strong> Gemini 1.5 Flash / GPT-4o-mini + Vector DB</div>
+              <div><strong style="color: var(--text-primary);">Chi phí API:</strong> <span style="color: var(--color-success); font-weight: 700;">Thấp (~$0.02 - $0.05/user/tháng)</span></div>
+              <div><strong style="color: var(--text-primary);">Cơ chế:</strong> Đóng gói vào gói thuê bao <em>Dancer Pro ($9.99/tháng)</em>.</div>
+            </div>
+          </div>
+
+          <!-- Trụ Cột 3: Brute-Force AI -->
+          <div class="glass-card" style="margin: 0; border-top: 4px solid var(--accent-cyan);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+              <span style="font-size: 12px; font-weight: 800; color: var(--accent-cyan);">3. BRUTE-FORCE AI (SĂN VIỆC)</span>
+              <span class="logo-badge" style="font-size: 10px; padding: 2px 8px; border-radius: 20px; background: #e0f2fe; color: #0369a1;">Phase 1 (215 MD - Đang làm)</span>
+            </div>
+            <h3 style="font-size: 15px; font-weight: 700; color: var(--text-primary); margin-bottom: 6px;">Job Agent Cào Tự Động & AI Pitch Outreach</h3>
+            <p style="font-size: 12px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;">
+              Xử lý khối lượng việc quy mô lớn: Quét hàng trăm studio, so khớp % Match, sinh thư EN/JP và nộp hồ sơ tức thì.
+            </p>
+            <div style="background: #f8fafc; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 11px; line-height: 1.7; color: var(--text-secondary);">
+              <div><strong style="color: var(--text-primary);">Tech Stack:</strong> Playwright Scraper + Deterministic Engine + Gemini</div>
+              <div><strong style="color: var(--text-primary);">Chi phí API:</strong> <span style="color: var(--color-success); font-weight: 700;">Đã tối ưu &lt;$100/tháng (Dùng chung Rails Server)</span></div>
+              <div><strong style="color: var(--text-primary);">Cơ chế:</strong> Gói Free (3 lượt) + Mở rộng Pro.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CƠ CẤU GÓI THU PHÍ (SUBSCRIPTION TIERS) -->
+        <h2 class="card-title" style="margin-bottom: 16px;">📦 Cơ Cấu Gói Thu Phí (Subscription Tiers) & Hạn Mức Quota Chống Lỗ</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-bottom: 30px;">
+          
+          <!-- GÓI 1: FREE -->
+          <div class="glass-card" style="margin: 0; position: relative;">
+            <span style="font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">TIER 1</span>
+            <h3 style="font-size: 18px; font-weight: 800; color: var(--text-primary); margin: 4px 0 10px 0;">Dancer Free (Trải nghiệm)</h3>
+            <div style="font-size: 24px; font-weight: 800; color: var(--text-primary); margin-bottom: 14px;">$0 <small style="font-size: 12px; color: var(--text-muted); font-weight: 500;">/ mãi mãi</small></div>
+            
+            <ul style="font-size: 12px; color: var(--text-secondary); list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+              <li>✅ <strong>Bảng tin việc làm (SCR-01):</strong> Xem & lọc 100% job cào về</li>
+              <li>✅ <strong>Tính điểm % Match:</strong> Khớp theo Style & Thành phố</li>
+              <li>⚡ <strong>AI Soạn Thư (SCR-03):</strong> Hạn mức cứng <strong>3 lượt / tháng</strong></li>
+              <li>❌ <strong>Bespoke Manager:</strong> Không hỗ trợ</li>
+              <li>❌ <strong>Audio Remix / Formation:</strong> Mua lẻ theo Token nạp</li>
+            </ul>
+            <div style="margin-top: 16px; padding: 10px; background: #f8fafc; border-radius: 8px; border: 1px solid var(--border-color); font-size: 11px; color: var(--text-secondary);">
+              <strong>Chi phí API tối đa:</strong> $0.003 / user / tháng (Platform bù nhẹ để lấy user).
+            </div>
+          </div>
+
+          <!-- GÓI 2: DANCER PRO -->
+          <div class="glass-card" style="margin: 0; border: 2px solid var(--accent-purple); position: relative; background: #faf5ff; box-shadow: 0 4px 12px rgba(109, 40, 217, 0.08);">
+            <div style="position: absolute; top: -10px; right: 16px; background: var(--accent-purple); color: #fff; font-size: 10px; font-weight: 800; padding: 2px 10px; border-radius: 20px;">RECOMMENDED TIER</div>
+            <span style="font-size: 11px; font-weight: 700; color: var(--accent-purple); text-transform: uppercase;">TIER 2</span>
+            <h3 style="font-size: 18px; font-weight: 800; color: var(--text-primary); margin: 4px 0 10px 0;">Dancer Pro (Bespoke Agent)</h3>
+            <div style="font-size: 24px; font-weight: 800; color: var(--accent-purple); margin-bottom: 14px;">$9.99 <small style="font-size: 12px; color: var(--text-muted); font-weight: 500;">/ tháng (~250.000đ)</small></div>
+            
+            <ul style="font-size: 12px; color: var(--text-primary); list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+              <li>✅ <strong>Toàn bộ quyền lợi Free</strong></li>
+              <li>✨ <strong>AI Soạn Thư Outreach:</strong> <strong>50 lượt / tháng</strong> (Thoải mái săn show)</li>
+              <li>🤖 <strong>Bespoke Personal Assistant:</strong> Quản lý lịch diễn, ghi chép thu chi cát-xê</li>
+              <li>📇 <strong>Organizer CRM:</strong> Lưu lịch sử làm việc & xếp hạng ban tổ chức</li>
+              <li>⚡ <strong>Priority Push:</strong> Nhận thông báo job &ge; 90% trước 30 phút</li>
+              <li>🎁 <strong>Tặng kèm:</strong> 5 Audio Remix Tokens / tháng</li>
+            </ul>
+            <div style="margin-top: 16px; padding: 10px; background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 8px; font-size: 11px; color: #065f46;">
+              <strong>Chi phí API thực tế:</strong> ~$0.65 / user &rarr; <strong>Biên lợi nhuận ròng: 93.5% ($9.34/user)</strong>.
+            </div>
+          </div>
+
+          <!-- GÓI 3: STUDIO & CREW PRO -->
+          <div class="glass-card" style="margin: 0; position: relative;">
+            <span style="font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">TIER 3</span>
+            <h3 style="font-size: 18px; font-weight: 800; color: var(--text-primary); margin: 4px 0 10px 0;">Power Studio / Crew Pro</h3>
+            <div style="font-size: 24px; font-weight: 800; color: var(--text-primary); margin-bottom: 14px;">$29.99 <small style="font-size: 12px; color: var(--text-muted); font-weight: 500;">/ tháng</small></div>
+            
+            <ul style="font-size: 12px; color: var(--text-secondary); list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+              <li>✅ <strong>Không giới hạn lượt tạo thư AI & Assistant</strong></li>
+              <li>👥 <strong>Đội nhóm / Dance Crew:</strong> Quản lý lịch chung 5-10 thành viên</li>
+              <li>🎵 <strong>Disposable AI Suite:</strong> 30 Audio Remix & Formation Tokens / tháng</li>
+              <li>📢 <strong>Đăng tuyển trực tiếp:</strong> Đẩy bài tuyển audition lên đầu Bảng tin</li>
+            </ul>
+            <div style="margin-top: 16px; padding: 10px; background: #f8fafc; border-radius: 8px; border: 1px solid var(--border-color); font-size: 11px; color: var(--text-secondary);">
+              <strong>Chi phí API thực tế:</strong> ~$3.20 / studio &rarr; <strong>Biên lợi nhuận ròng: 89.3% ($26.79/studio)</strong>.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- KỊCH BẢN CHỐNG LỖ KHI AI TĂNG GIÁ GẤP ĐÔI -->
+        <div class="glass-card" style="margin-bottom: 30px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <h3 class="card-title" style="color: var(--text-primary);">🛡️ Kịch Bản Chống Lỗ Khi AI 3rd-Party Tăng Giá (AI Inflation & Cost Spike Buffer)</h3>
+              <p style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">Tính toán trường hợp giá API của OpenAI / Google / Suno tăng gấp đôi (+100%) hoặc lạm phát công nghệ.</p>
+            </div>
+            <span class="logo-badge" style="background: #fee2e2; color: #dc2626; font-weight: 700; padding: 4px 10px; border-radius: 8px; border: 1px solid #fecaca;">
+              Buffer an toàn: 10x Margin
+            </span>
+          </div>
+
+          <div class="glossary-table-wrapper">
+            <table class="glossary-table">
+              <thead>
+                <tr>
+                  <th>Dịch Vụ AI 3rd-Party</th>
+                  <th>Mức Tiêu Thụ / User Pro</th>
+                  <th>Giá Hiện Tại (Baseline)</th>
+                  <th>Khi AI Tăng Giá Gấp Đôi (+100%)</th>
+                  <th>Giá Gói Thu ($9.99)</th>
+                  <th>Đánh Giá Mức Độ An Toàn</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Gemini 1.5 Flash (Soạn thư + Assistant)</strong></td>
+                  <td>50 lượt thư + 100 prompt trợ lý</td>
+                  <td>$0.05 / tháng</td>
+                  <td><strong style="color: var(--color-warning);">$0.10 / tháng</strong></td>
+                  <td rowspan="3" style="font-weight: 800; font-size: 16px; color: var(--accent-purple); text-align: center; vertical-align: middle; background: #f8fafc;">
+                    $9.99 / tháng
+                  </td>
+                  <td><span style="color: var(--color-success); font-weight: 700;">🟢 Siêu an toàn (Chiếm &lt;1% giá gói)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Postgres / pgvector & Embeddings</strong></td>
+                  <td>Vector search profile & CRM</td>
+                  <td>$0.10 / tháng</td>
+                  <td><strong style="color: var(--color-warning);">$0.20 / tháng</strong></td>
+                  <td><span style="color: var(--color-success); font-weight: 700;">🟢 An toàn (Chạy chung Server Rails)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Audio Gen / Remix AI (5 bài tặng kèm)</strong></td>
+                  <td>5 bài remix / tháng</td>
+                  <td>$0.50 ($0.10/bài)</td>
+                  <td><strong style="color: var(--color-danger);">$1.00 ($0.20/bài)</strong></td>
+                  <td><span style="color: var(--color-success); font-weight: 700;">🟢 Vẫn lãi đậm ($8.69 / user)</span></td>
+                </tr>
+                <tr style="background: #ecfdf5; font-weight: bold;">
+                  <td colspan="2"><strong style="color: #065f46;">TỔNG CHI PHÍ API / USER PRO / THÁNG</strong></td>
+                  <td><strong style="color: #065f46;">$0.65 / tháng</strong></td>
+                  <td><strong style="color: #b91c1c;">$1.30 / tháng</strong></td>
+                  <td style="text-align: center; color: var(--accent-purple); font-size: 16px;">$9.99</td>
+                  <td><strong style="color: #065f46;">🛡️ AN TOÀN TUYỆT ĐỐI (Lãi 87.0% dù AI tăng gấp 2)</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- BẢNG DỰ PHÓNG TÀI CHÍNH KHI SCALE-UP (50 -> 200 USERS) -->
+        <div class="glass-card">
+          <h3 class="card-title" style="color: var(--text-primary);">📈 Bảng Dự Phóng Tài Chính Khi Scale-Up (50 &rarr; 100 &rarr; 150 &rarr; 200 Users)</h3>
+          <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 16px;">
+            Giả định kịch bản thực tế: <strong>30% User trả phí Pro ($9.99)</strong>, <strong>70% User dùng Free ($0)</strong>, kèm chi phí vận hành Server & AI.
+          </p>
+
+          <div class="glossary-table-wrapper">
+            <table class="glossary-table">
+              <thead>
+                <tr>
+                  <th>Quy Mô Người Dùng</th>
+                  <th>Phân Bổ User (Free / Pro)</th>
+                  <th>Doanh Thu Gói / Tháng</th>
+                  <th>Chi Phí AI 3rd-Party</th>
+                  <th>Chi Phí Server (Dùng chung)</th>
+                  <th>LỢI NHUẬN RÒNG / THÁNG</th>
+                  <th>Tỷ Suất Lợi Nhuận</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>50 Users</strong> <small>(Giai đoạn khởi điểm)</small></td>
+                  <td>35 Free / 15 Pro</td>
+                  <td>$149.85</td>
+                  <td>-$10.05</td>
+                  <td>$0 <small>(Chung Rails)</small></td>
+                  <td style="font-weight: 800; color: var(--color-success); font-size: 14px;">+$139.80 / tháng</td>
+                  <td><span class="tag-badge" style="background: #dcfce7; color: #15803d;">93.3%</span></td>
+                </tr>
+                <tr>
+                  <td><strong>100 Users</strong> <small>(Tăng trưởng Q1)</small></td>
+                  <td>70 Free / 30 Pro</td>
+                  <td>$299.70</td>
+                  <td>-$20.10</td>
+                  <td>$0 <small>(Chung Rails)</small></td>
+                  <td style="font-weight: 800; color: var(--color-success); font-size: 14px;">+$279.60 / tháng</td>
+                  <td><span class="tag-badge" style="background: #dcfce7; color: #15803d;">93.3%</span></td>
+                </tr>
+                <tr>
+                  <td><strong>150 Users</strong> <small>(Mở rộng cộng đồng)</small></td>
+                  <td>105 Free / 45 Pro</td>
+                  <td>$449.55</td>
+                  <td>-$30.15</td>
+                  <td>-$20.00 <small>(Nâng RAM Redis)</small></td>
+                  <td style="font-weight: 800; color: var(--color-success); font-size: 14px;">+$399.40 / tháng</td>
+                  <td><span class="tag-badge" style="background: #dcfce7; color: #15803d;">88.8%</span></td>
+                </tr>
+                <tr style="background: #f0fdf4;">
+                  <td><strong>200 Users</strong> <small>(Vận hành ổn định)</small></td>
+                  <td>140 Free / 60 Pro</td>
+                  <td><strong style="color: var(--text-primary);">$599.40</strong></td>
+                  <td>-$40.20</td>
+                  <td>-$35.00 <small>(Worker riêng)</small></td>
+                  <td style="font-weight: 800; color: var(--color-success); font-size: 15px;">+$524.20 / tháng</td>
+                  <td><span class="tag-badge" style="background: #bbf7d0; color: #166534; font-weight: 800;">87.5%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="margin-top: 18px; padding: 14px; background: #f8fafc; border: 1px solid var(--border-color); border-radius: 10px; font-size: 12px; color: var(--text-secondary); line-height: 1.7;">
+            💡 <strong style="color: var(--text-primary);">Kết Luận Tài Chính Cho Team:</strong>
+            <ul style="padding-left: 20px; margin-top: 6px;">
+              <li>Mô hình này giúp Hammer <strong>tự chủ tài chính 100% từ mốc 50 users</strong>, không cần phải bỏ tiền túi bù lỗ API hàng tháng.</li>
+              <li>Nguyên tắc khóa an toàn: <strong>Tính năng nặng (Audio Remix / Formation) phải bán theo Token / Lượt nạp</strong>. Tính năng Text & Quản lý thông minh gom vào gói <strong>$9.99/tháng</strong>.</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- SECTION: AI ROADMAP -->
+      <section id="sec-ai-roadmap" class="content-section">
+        <h1 class="section-title">Lộ trình Tích hợp AI Agent MVP</h1>
+        <p class="section-subtitle">Phân tích khoảng cách giữa đề xuất MVP mới và hạ tầng sẵn có của Hammer.</p>
+        
+        <div class="glass-card">
+          <h3 class="card-title">🤖 Phân tích khoảng cách phát triển (Gap Analysis)</h3>
+          <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+            AI Agent được thiết kế chạy độc lập dưới dạng một Microservice NestJS (<a href="file:///c:/Users/Song%20Quyen/Hammer/DEV/hammer-agent" class="code-link">hammer-agent</a>) để bảo mật tuyệt đối cho lõi cơ sở dữ liệu thanh toán. Dưới đây là phân bổ tài nguyên:
+          </p>
+          
+          <div class="timeline-layout" style="margin-top: 24px; margin-bottom: 32px;">
+            <div class="glass-card" style="margin: 0;">
+              <h4 style="font-family: var(--font-title); font-size: 15px; margin-bottom: 12px; color: #fff;">🟢 Tái sử dụng (Reuse)</h4>
+              <ul style="font-size: 13px; color: var(--text-secondary); padding-left: 20px; line-height: 1.8;">
+                <li>Cổng thanh toán Airwallex Guest Checkout</li>
+                <li>Hạ tầng Ví giảng viên (Wallet)</li>
+                <li>Lệnh chuyển khoản payout Airwallex</li>
+                <li>Giao diện quản trị Admin CMS Rails</li>
+              </ul>
+              
+              <h4 style="font-family: var(--font-title); font-size: 15px; margin-top: 16px; margin-bottom: 12px; color: #fff;">🟡 Mở rộng (Extend)</h4>
+              <ul style="font-size: 13px; color: var(--text-secondary); padding-left: 20px; line-height: 1.8;">
+                <li>Logic Ví bảo chứng giải ngân tự động qua Cron-job</li>
+                <li>Dispute Center duyệt đóng băng/hoàn tiền tranh chấp</li>
+              </ul>
+            </div>
+            
+            <div class="glass-card" style="margin: 0;">
+              <h4 style="font-family: var(--font-title); font-size: 15px; margin-bottom: 12px; color: #fff;">🔴 Xây mới 100% (New)</h4>
+              <ul style="font-size: 13px; color: var(--text-secondary); padding-left: 20px; line-height: 1.8;">
+                <li>Crawler tự động cào tin tuyển dụng</li>
+                <li>Thuật toán so khớp vector thông minh (pgvector)</li>
+                <li>Cổng xác thực danh tính & ID kiểm duyệt (KYC Gate)</li>
+                <li>Bảng tuyển dụng công khai (Job Board)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-color); padding-top: 24px;" id="ai-gap-details-container">
+            <!-- Dynamic detailed text allocation descriptions -->
+          </div>
+        </div>
+        
+        <div class="glass-card">
+          <h3 class="card-title">⛓️ Dòng chảy nghiệp vụ & Quy tắc Ví bảo chứng (Secure Escrow)</h3>
+          <div class="timeline-layout" style="align-items: start; margin-top: 20px;">
+            <div class="diagram-container" style="margin: 0; padding: 16px;">
+              <img src="../images/escrow_flow.svg" class="diagram-image" alt="Escrow State Diagram">
+              <div class="diagram-caption">Sơ đồ máy trạng thái Ví bảo chứng Escrow</div>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 12px;" id="escrow-rules-container">
+              <!-- Dynamic list of escrow rules -->
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card" id="ai-security-container" style="border-left: 4px solid var(--accent-pink);">
+          <!-- Dynamic security boundaries architecture -->
+        </div>
+      </section>
+      
+      <!-- SECTION: WHATSAPP -->
+      <section id="sec-whatsapp" class="content-section">
+        <h1 class="section-title">Đồng bộ Hội thoại WhatsApp</h1>
+        <p class="section-subtitle">Xem và đồng bộ các cuộc thảo luận nghiệp vụ thời gian thực với team Hammer.</p>
+        
+        <div class="glass-card">
+          <h3 class="card-title">💬 Lịch sử hội thoại WhatsApp của team</h3>
+          <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+            <button id="sync-whatsapp-btn" class="actor-tab active" style="padding: 10px 16px; font-size: 13px; cursor: pointer; border-radius: 6px;">
+              🔄 Đồng bộ & Tải lại tin nhắn
+            </button>
+            <button id="clear-whatsapp-btn" class="actor-tab" style="padding: 10px 16px; font-size: 13px; cursor: pointer; border-radius: 6px; border-color: rgba(239, 68, 68, 0.3); color: var(--color-danger);">
+              🗑️ Xóa lịch sử (Reset file)
+            </button>
+          </div>
+          
+          <div id="whatsapp-chat-box" style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; font-family: monospace; font-size: 13px; line-height: 1.6; height: 350px; overflow-y: auto; color: #cbd5e1;">
+            Chưa có dữ liệu trò chuyện WhatsApp được đồng bộ. Nhấn nút đồng bộ phía trên để tải dữ liệu.
+          </div>
+        </div>
+
+        <div class="glass-card" style="border-left: 4px solid var(--accent-purple);">
+          <h3 class="card-title" style="color: var(--accent-purple);">📋 Hướng dẫn tự động đồng bộ tin nhắn mới</h3>
+          <div style="font-size: 13px; line-height: 1.7; color: var(--text-secondary); display: flex; flex-direction: column; gap: 12px;">
+            <p>Để tin nhắn mới từ điện thoại tự động đẩy về máy tính của bạn và cập nhật lên website này, hãy làm theo 3 bước sau:</p>
+            <ol style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+              <li><strong>Bước 1:</strong> Mở trang <a href="https://web.whatsapp.com" target="_blank" class="code-link">web.whatsapp.com</a> trên Chrome/Edge/Firefox và chọn cuộc trò chuyện muốn theo dõi.</li>
+              <li><strong>Bước 2:</strong> Nhấn phím <code>F12</code> (hoặc Chuột phải -> Inspect), chọn tab <strong>Console</strong>.</li>
+              <li><strong>Bước 3:</strong> Mở file <a href="file:///c:/Users/Song%20Quyen/Hammer/whatsapp_observer.js" class="code-link">whatsapp_observer.js</a> ở thư mục dự án của bạn, copy toàn bộ nội dung code, dán vào tab Console và nhấn <code>Enter</code>.</li>
+            </ol>
+            <p style="opacity: 0.8; font-style: italic; margin-top: 8px;">
+              💡 Lưu ý: Cổng nhận tin (Node.js receiver) đang chạy ẩn trên máy tính của bạn ở địa chỉ <code>http://localhost:8080</code>. Giữ cửa sổ terminal chạy để bộ nhận tin tiếp tục chạy ngầm.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: GLOSSARY -->
+      <section id="sec-glossary" class="content-section">
+        <h1 class="section-title">Từ điển Thuật ngữ Nghiệp vụ</h1>
+        <p class="section-subtitle">Ánh xạ thuật ngữ nghiệp vụ Anh - Việt đồng nhất toàn hệ thống tới các file model Rails vật lý.</p>
+        
+        <div class="glass-card">
+          <div class="glossary-controls">
+            <input type="text" id="glossary-search-input" class="search-input" style="padding-left: 12px;" placeholder="Tìm kiếm nhanh thuật ngữ (Ví dụ: Wallet, Event, checkin)...">
+          </div>
+          
+          <div class="glossary-table-wrapper">
+            <table class="glossary-table">
+              <thead>
+                <tr>
+                  <th style="width: 20%;">Tiếng Anh (System Term)</th>
+                  <th style="width: 20%;">Tiếng Việt (Dịch nghĩa)</th>
+                  <th style="width: 40%;">Mô tả Nghiệp vụ</th>
+                  <th style="width: 20%;">Model tương ứng</th>
+                </tr>
+              </thead>
+              <tbody id="glossary-table-body">
+                <!-- Dynamically Rendered Table Rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SECTION: AI RULES -->
+      <section id="sec-ai-rules" class="content-section">
+        <h1 class="section-title">Quy tắc Vận hành AI (AI Rules)</h1>
+        <p class="section-subtitle">Quy ước bắt buộc đối với tất cả AI Assistant tham gia phát triển dự án Hammer.</p>
+        
+        <div class="glass-card">
+          <h3 class="card-title" style="color: var(--accent-purple);">📜 Quy ước AI Rules</h3>
+          
+          <div style="font-size: 14px; line-height: 1.7; color: var(--text-secondary); display: flex; flex-direction: column; gap: 16px;">
+            <div>
+              <strong style="color: #fff; display: block; margin-bottom: 4px;">1. Quy trình 3 bước (Scan - Write - Cross-Review)</strong>
+              Mọi tính năng hay tài liệu do AI làm ra phải được quét thực tế từ code DEV, viết theo yêu cầu và kiểm duyệt chéo để tránh lỗi logic hoặc lỗi hiển thị.
+            </div>
+            
+            <div>
+              <strong style="color: #fff; display: block; margin-bottom: 4px;">2. Chế độ Read-Only cho thư mục DEV</strong>
+              AI chỉ được phép đọc mã nguồn trong thư mục <a href="file:///c:/Users/Song%20Quyen/Hammer/DEV" class="code-link">DEV</a> để nghiên cứu nghiệp vụ. Nghiêm cấm tuyệt đối việc chỉnh sửa, tạo file hay thực hiện lệnh commit git lên thư mục DEV này để tránh hỏng hóc mã nguồn chính.
+            </div>
+            
+            <div>
+              <strong style="color: #fff; display: block; margin-bottom: 4px;">3. Xuất ảnh Mermaid URL-Safe</strong>
+              Tất cả sơ đồ Mermaid trong markdown hoặc web phải được mã hóa Base64 URL-safe (thay `+` bằng `-`, `/` bằng `_`, bỏ `=`) để đảm bảo kết xuất ảnh không bao giờ bị lỗi link.
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SECTION: DATABASE ERD -->
+      <section id="sec-database-erd" class="content-section">
+        <h1 class="section-title">Kiến trúc CSDL & Sơ đồ ERD</h1>
+        <p class="section-subtitle">Phân tích cấu trúc bảng, mối quan hệ và sự ánh xạ của AI Agent đối với giao diện App và CMS.</p>
+        
+        <div id="database-erd-container"></div>
+      </section>
+      
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
